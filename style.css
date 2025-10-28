@@ -26,7 +26,8 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: rgba(241, 237, 230, 0.8); /* semi-transparent */
+  /*background: rgba(241, 237, 230, 0.8);*/ /* semi-transparent */
+  background: rgba(164, 131, 116, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +50,7 @@ nav a {
   transition: color 0.3s;
 }
 nav a:hover {
-  color: var(--accent);
+  color: rgba(241, 237, 230, 1);
 }
 
 /* Hero */
@@ -76,9 +77,10 @@ nav a:hover {
   color: #3A2D28;
 }
 .btn.secondary {
-  border: 2px solid #A48374; /* update border */
+  background: #A48374;
+  /*border: 2px solid #A48374;*/ /* update border */
   color: #3A2D28; /* update text color */
-}
+} 
 .btn:hover {
   transform: translateY(-3px);
 }
@@ -110,7 +112,7 @@ section {
 .project-card .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(164, 131, 116, 0.6);
   color: white;
   width: 100%;
   opacity: 0;
@@ -184,7 +186,7 @@ footer {
   padding: 12px 20px;
   border: none;
   border-radius: 30px;
-  background: var(--accent);
+  background: #A48374;
   color: #3A2D28;
   font-weight: bold;
   cursor: pointer;
