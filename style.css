@@ -17,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(to bottom, #F1EDE6, #EBE3DB, #D1C7BD, #CBAD8D);
   background-size: 100% 400%;
-  color: var(--text);
+  color: #3A2D28;
   scroll-behavior: smooth;
   transition: background-position 0.2s ease-out;
 }
@@ -26,7 +26,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: #F1EDE6;
+  background: rgba(241, 237, 230, 0.8); /* semi-transparent */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +44,7 @@ nav ul {
   gap: 1.5rem;
 }
 nav a {
-  color: var(--text);
+  color: #3A2D28;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -55,11 +55,11 @@ nav a:hover {
 /* Hero */
 #hero {
   height: 100vh;
-  background: linear-gradient(135deg, #EBE3DB, #D1C7BD);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: transparent; /* Allow body background to show */
 }
 .hero-content h1 span {
   color: var(--accent);
@@ -72,12 +72,12 @@ nav a:hover {
   transition: all 0.3s;
 }
 .btn.primary {
-  background: var(--accent);
+  background: #A48374;
   color: #3A2D28;
 }
 .btn.secondary {
-  border: 2px solid var(--accent);
-  color: var(--accent);
+  border: 2px solid #A48374; /* update border */
+  color: #3A2D28; /* update text color */
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -163,7 +163,7 @@ footer {
   border-radius: 8px;
   border: 2px solid #333;
   background: #1a1a1a;
-  color: var(--text);
+  color: #3A2D28;
   font-size: 1rem;
   transition: border 0.3s, background 0.3s;
 }
@@ -193,7 +193,7 @@ footer {
 
 #contact form button:hover {
   transform: translateY(-3px);
-  background: #00e0ff;
+  background: #b2978a;
 }
 
 /* Contact social links */
