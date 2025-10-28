@@ -44,3 +44,12 @@ contactForm.addEventListener('submit', (e) => {
   // Reset form
   contactForm.reset();
 });
+
+
+// Dynamic scrolling background
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = scrollTop / docHeight;
+  document.body.style.backgroundPosition = `center ${scrollPercent * 100}%`;
+});

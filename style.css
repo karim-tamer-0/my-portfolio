@@ -4,12 +4,22 @@
   --text: #fff;
 }
 
-body {
+/* body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: var(--bg);
   color: var(--text);
   scroll-behavior: smooth;
+} */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #F1EDE6, #EBE3DB, #D1C7BD, #CBAD8D);
+  background-size: 100% 400%;
+  color: var(--text);
+  scroll-behavior: smooth;
+  transition: background-position 0.2s ease-out;
 }
 
 /* Header */
