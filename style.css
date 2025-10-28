@@ -63,7 +63,7 @@ nav a:hover {
 }
 .btn.primary {
   background: var(--accent);
-  color: #000;
+  color: #3A2D28;
 }
 .btn.secondary {
   border: 2px solid var(--accent);
@@ -115,8 +115,8 @@ section {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #111;
-  color: #aaa;
+  background: #A48374;
+  color: #3A2D28;
   font-size: 0.9rem;
 }
 
@@ -201,7 +201,7 @@ footer {
 }
 
 .contact-links a:hover {
-  color: #00e0ff;
+  color: #F1EDE6;
 }
 
 /* Responsive Contact Form */
