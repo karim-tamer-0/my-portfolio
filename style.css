@@ -122,6 +122,10 @@ section {
 .project-card:hover .overlay {
   opacity: 1;
 }
+.project-card.last-project {
+  grid-column: 2 / span 1; /* centers it when 3 columns are visible */
+  justify-self: center;
+}
 
 /* Footer */
 footer {
