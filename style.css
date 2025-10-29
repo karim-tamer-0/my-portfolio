@@ -84,6 +84,12 @@ nav a:hover {
 .btn:hover {
   transform: translateY(-3px);
 }
+img.profile-img {
+  width: 200px;          /* size of the circle */
+  height: 200px;         /* same as width */
+  border-radius: 50%;    /* makes it a perfect circle */
+  object-fit: cover;     /* ensures it fills the circle */
+}
 
 /* Sections */
 section {
@@ -94,13 +100,16 @@ section {
 /* Projects */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 projects per row */
   gap: 20px;
+  justify-items: center; /* centers items if fewer than 3 on last row */
 }
 .project-card {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  width: 100%; /* keeps images consistent */
+  max-width: 350px; /* optional: keeps each card nicely sized */
 }
 .project-card img {
   width: 100%;
@@ -125,6 +134,9 @@ section {
 .project-card.last-project {
   grid-column: 2 / span 1; /* centers it when 3 columns are visible */
   justify-self: center;
+}
+#projects .btn.secondary {
+  margin-top: 2rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
 }
 
 /* Footer */
@@ -224,5 +236,155 @@ footer {
 @media (max-width: 500px) {
   #contact form {
     width: 90%;
+  }
+}
+
+
+/* =======================
+   MOBILE & TABLET STYLES
+======================= */
+
+/* --- For tablets and small laptops --- */
+@media (max-width: 1024px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* --- For phones --- */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  /* Hero */
+  #hero {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero h2 {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* About */
+  #about p {
+    font-size: 0.95rem;
+  }
+
+  /* Projects */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .project-card.last-project {
+    grid-column: auto;
+  }
+
+  /* Testimonials */
+  .testimonial-slider {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+
+  /* Contact */
+  #contact form {
+    width: 90%;
+  }
+
+  #contact form input,
+  #contact form textarea {
+    font-size: 0.95rem;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+  }
+}
+
+/* --- For very small screens (phones < 480px) --- */
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero h2 {
+    font-size: 0.9rem;
+  }
+
+  p, li, a {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 2.5rem 1rem;
   }
 }
