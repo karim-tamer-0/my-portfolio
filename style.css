@@ -79,13 +79,12 @@ nav a:hover {
 .btn.primary {
   background: #A48374;
   color: #3A2D28;
-  margin-top: 4rem;
 }
 .btn.secondary {
   background: #A48374;
   /*border: 2px solid #A48374;*/ /* update border */
   color: #3A2D28; /* update text color */
-  margin-top: 4rem;
+  margin-top: 7rem;
 } 
 .btn:hover {
   transform: translateY(-3px);
