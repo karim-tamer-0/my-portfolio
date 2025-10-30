@@ -84,7 +84,7 @@ nav a:hover {
   background: #A48374;
   /*border: 2px solid #A48374;*/ /* update border */
   color: #3A2D28; /* update text color */
-  margin-top: 7rem;
+  margin-top: 11rem;
 } 
 .btn:hover {
   transform: translateY(-3px);
@@ -156,7 +156,7 @@ section {
   opacity: 1;
 }
 #projects .btn.secondary {
-  margin-top: 10rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
+  margin-top: 15rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
 }
 
 /* Footer */
@@ -434,5 +434,29 @@ footer {
 
   section {
     padding: 2.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-links {
+    flex-direction: column;     /* stack each contact item vertically */
+    align-items: center;        /* center items horizontally */
+    gap: 1rem;                  /* space between each contact row */
+  }
+
+  .contact-links a {
+    flex-wrap: nowrap;          /* keep icon + text on the same line */
+    justify-content: center;    /* center both icon and text */
+    font-size: 1rem;            /* smaller text for phones */
+  }
+
+  .contact-links img {
+    width: 20px;                /* make sure icons are visible */
+    height: 20px;
+  }
+
+  .contact-links span {
+    font-size: 0.95rem;
+    word-break: break-word;     /* prevent overlap for long emails */
   }
 }
