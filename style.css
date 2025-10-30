@@ -79,11 +79,13 @@ nav a:hover {
 .btn.primary {
   background: #A48374;
   color: #3A2D28;
+  margin-top: 4rem;
 }
 .btn.secondary {
   background: #A48374;
   /*border: 2px solid #A48374;*/ /* update border */
   color: #3A2D28; /* update text color */
+  margin-top: 4rem;
 } 
 .btn:hover {
   transform: translateY(-3px);
@@ -149,14 +151,13 @@ section {
   flex-direction: column; /* stack h3 and p vertically */
   justify-content: center; /* center vertically */
   align-items: center;     /* center horizontally */
-  text-align: center;      /* center text inside */
-  padding: 5px;           /* optional: spacing from edges */
+  text-align: center;      /* center text inside */         
 }
 .project-card:hover .overlay {
   opacity: 1;
 }
 #projects .btn.secondary {
-  margin-top: 7rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
+  margin-top: 10rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
 }
 
 /* Footer */
@@ -241,19 +242,19 @@ footer {
   justify-content: center;
   gap: 2rem;
 }
-
+/*
 .contact-links a {
   color: var(--accent);
   font-size: 1.5rem;
   transition: color 0.3s;
-}
+}*/
 .contact-links a {
   display: flex;             /* align icon + text */
   align-items: center;       /* vertical align */
   gap: 0.5rem;               /* space between icon and text */
   color: var(--accent);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
