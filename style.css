@@ -121,7 +121,7 @@ section {
 .project-card .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(164, 131, 116, 0.6);
+  background: rgba(58, 45, 40, 0.6);
   color: white;
   width: 100%;
   opacity: 0;
@@ -131,19 +131,15 @@ section {
 .project-card:hover .overlay {
   opacity: 1;
 }
-.project-card.last-project {
-  grid-column: 2 / span 1; /* centers it when 3 columns are visible */
-  justify-self: center;
-}
 #projects .btn.secondary {
-  margin-top: 2rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
+  margin-top: 4rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #A48374;
+  /*background: #A48374;*/
   color: #3A2D28;
   font-size: 0.9rem;
 }
@@ -239,6 +235,12 @@ footer {
   }
 }
 
+.btn.primary:hover,
+.btn.secondary:hover {
+  transform: translateY(-3px);
+  background: #b2978a; /* same as Send Message hover */
+  transition: transform 0.3s, background 0.3s; /* smooth effect */
+}
 
 /* =======================
    MOBILE & TABLET STYLES
