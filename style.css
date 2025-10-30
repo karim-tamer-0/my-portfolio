@@ -76,8 +76,8 @@ nav a:hover {
   font-weight: bold;
   transition: all 0.3s;
 }
-.hero-content .buttons {
-  margin-top: 5rem; /* increase spacing below text */
+.hero-content .btn.secondary {
+  margin-top: 2rem; /* move only the 'View My Work' button down */
 }
 .btn.primary {
   background: #A48374;
