@@ -76,8 +76,8 @@ nav a:hover {
   font-weight: bold;
   transition: all 0.3s;
 }
-.hero-content .btn.secondary {
-  margin-top: 2rem; /* move only the 'View My Work' button down */
+.hero-content .buttons {
+  margin-top: 2rem; /* increase spacing below text */
 }
 .btn.primary {
   background: #A48374;
@@ -89,6 +89,9 @@ nav a:hover {
   color: #3A2D28; /* update text color */
   margin-top: 11rem;
 } 
+.hero-content .btn.secondary {
+  margin-top: 2rem; /* move only the 'View My Work' button down */
+}
 .btn:hover {
   transform: translateY(-3px);
 }
@@ -159,7 +162,7 @@ section {
   opacity: 1;
 }
 #projects .btn.secondary {
-  margin-top: 15rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
+  margin-top: 20rem; /* adjust this value — e.g., 1rem, 2rem, 3rem */
 }
 
 /* Footer */
