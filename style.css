@@ -76,6 +76,9 @@ nav a:hover {
   font-weight: bold;
   transition: all 0.3s;
 }
+.hero-content .buttons {
+  margin-top: 5rem; /* increase spacing below text */
+}
 .btn.primary {
   background: #A48374;
   color: #3A2D28;
