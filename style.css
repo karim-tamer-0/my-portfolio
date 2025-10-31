@@ -162,10 +162,10 @@ section {
   opacity: 1;
 }
 #projects {
-  padding-bottom:10rem; /* add extra space at the bottom of the section */
+  padding-bottom:5rem; /* add extra space at the bottom of the section */
 }
 #projects .btn.secondary {
-  margin: 7rem auto 0; /* centers it and pushes it down */
+  margin-top: 5rem auto 0; /* centers it and pushes it down */
 }
 
 /* Footer */
