@@ -165,7 +165,9 @@ section {
   padding-bottom:5rem; /* add extra space at the bottom of the section */
 }
 #projects .btn.secondary {
-  margin-top: 5rem auto 0; /* centers it and pushes it down */
+  display: block;            /* make it behave like a block */
+  margin: 5rem auto 0;       /* top auto bottom margins */
+  width: fit-content;        /* keeps it from stretching full width */
 }
 
 /* Footer */
