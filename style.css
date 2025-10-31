@@ -162,11 +162,11 @@ section {
   opacity: 1;
 }
 #projects {
-  padding-bottom:5rem; /* add extra space at the bottom of the section */
+  padding-bottom:3rem; /* add extra space at the bottom of the section */
 }
 #projects .btn.secondary {
   display: block;            /* make it behave like a block */
-  margin: 3rem auto 0;       /* top auto bottom margins */
+  margin: 2rem auto 0;       /* top auto bottom margins */
   width: fit-content;        /* keeps it from stretching full width */
 }
 
